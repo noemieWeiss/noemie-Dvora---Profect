@@ -1,0 +1,79 @@
+.action-controls {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-controls h3 {
+  margin: 0 0 15px 0;
+  color: #856404;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.space-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.space-btn:hover {
+  background: #5a6268;
+}
+
+.clear-btn {
+  background: #fd7e14;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #e8690b;
+}
+
+.undo-btn {
+  background: #28a745;
+  color: white;
+}
+
+.undo-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.undo-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons button {
+    width: 100%;
+  }
+}
